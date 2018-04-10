@@ -56,8 +56,9 @@
     	<script type='text/javascript'>
     	    jQuery(document).ready(function(){
     	       var message = jQuery("h1#greeting").text(); 
-    	       jQuery("#sendMessage").click(function(){
+    	       jQuery("#createOpportunity").click(function(){
     	           console.log('send message button clicked');
+    	           sforce.one.createRecord("Opportunity", null, { Name: "Name from VF" });
     	       });
     	    });
     	</script>
