@@ -24,7 +24,7 @@
         <componentInstances>
             <componentInstanceProperties>
                 <name>helloName</name>
-                <value>World</value>
+                <value>Component</value>
             </componentInstanceProperties>
             <componentName>ltng_BootstrapContainer</componentName>
         </componentInstances>
