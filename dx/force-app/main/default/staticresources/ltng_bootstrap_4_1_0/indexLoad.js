@@ -36,13 +36,38 @@ function dispatchMessage(message){
     });
 }
 
+/**
+ * Tell the container app to resize
+ * @param newSize
+ */
+function resizeContainer(newSize){
+
+    //-- determine best fit if size is negative
+    if (newSize < 0){
+        //-- determine min fit
+        var windowHeight = jQuery(window).height();
+        var documentHeight = jQuery(document).height();
+
+        if (windowHeight < documentHeight){
+            newSize = documentHeight;
+        } else {
+            return;
+        }
+    }
+
+    window.sendMessage({
+        name : "ResizeContainer",
+        value : newSize
+    });
+}
+
 jQuery(document).ready(function(){
     console.info('document is ready');
 
     //-- update the hello name
     var helloName = url_query("helloName");
-    if (!helloName) helloName = "World";
-    jQuery("h1.display-3").text("Hello, " + helloName);
+    if (!helloName) helloName = "Hello, World";
+    jQuery("h1.display-3").text(helloName);
 
     //-- send a message when clicking the button
     jQuery("a#sendMessage").click(dispatchMessage);
@@ -54,4 +79,7 @@ jQuery(document).ready(function(){
     window.addErrorHandler( function(){
         console.error('error occurred');
     });
+
+    //-- resize the container if needed
+    resizeContainer(-1);
 });
