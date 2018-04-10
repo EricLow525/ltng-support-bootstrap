@@ -37,9 +37,12 @@ as it can live comfortably with other lightning components
 Conversely, it is possible to have Bootstrap running in a Visualforce page,
 as this already has it contained within a security frame.
 
-![Screenshot of Bootstrap in Visualforce page](doc/images/bootstrapInVisualforcePage.png)
+![Screenshot of Bootstrap in Visualforce page](doc/images/bootstrapInVisualforcePage.gif)
 
-(messages can be sent back and forth to lightning using [Window.postMessage()](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) )
+See here how to [navigate within Lightning using sforce.one](https://developer.salesforce.com/docs/atlas.en-us.salesforce1.meta/salesforce1/salesforce1_dev_jsapi_sforce_one.htm)
+
+For further integration, use [PostMessages](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) <br />
+similar to the [Communicating between Lightning Components and Visualforce Pages blog](https://developer.salesforce.com/blogs/developer-relations/2017/01/lightning-visualforce-communication.html)
 
 .
 
@@ -157,10 +160,6 @@ And within your SPA, receive the message
 The metadata for this example can be found under the [mdapi](./mdapi) folder.
 
 The Salesforce CLI version of this code can be found under the [dx](./dx) folder.
-
-This can also be installed using Unlocked Packages (previously known as Developer Controlled Packages) in sandboxes using this url:
-
-[url](url)
 
 ## Installing via the Salesforce CLI
 

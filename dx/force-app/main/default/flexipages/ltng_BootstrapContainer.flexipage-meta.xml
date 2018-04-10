@@ -3,8 +3,12 @@
     <flexiPageRegions>
         <componentInstances>
             <componentInstanceProperties>
+                <name>containerSize</name>
+                <value>800</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
                 <name>helloName</name>
-                <value>from Lightning</value>
+                <value>Hello, from Lightning</value>
             </componentInstanceProperties>
             <componentName>ltng_BootstrapContainer</componentName>
         </componentInstances>

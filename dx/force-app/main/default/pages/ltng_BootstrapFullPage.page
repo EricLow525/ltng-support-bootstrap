@@ -21,9 +21,11 @@
     	<!-- Main jumbotron for a primary marketing message or call to action -->
     	<div class="jumbotron">
     		<div class="container">
-    			<h1 class="display-3">Hello, world!</h1>
+    			<h1 class="display-3" id='greeting'>Hello, from Visualforce!</h1>
     			<p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-    			<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+    			<p>See here how to <a href='https://developer.salesforce.com/docs/atlas.en-us.salesforce1.meta/salesforce1/salesforce1_dev_jsapi_sforce_one.htm'>navigate within Lightning using sforce.one</a></p>
+    			<p>For further integration, use <a href='https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage'>PostMessages</a> <br /> similar to the <a href='https://developer.salesforce.com/blogs/developer-relations/2017/01/lightning-visualforce-communication.html'>Communicating between Lightning Components and Visualforce Pages blog</a></p>
+    			<p><a class="btn btn-primary btn-lg" href="#" id='createOpportunity' role="button">Create Opportunity »</a></p>
     		</div>
     	</div>
     	
@@ -50,6 +52,15 @@
     		<hr />
     	
     	</div> <!-- /container -->
+    	
+    	<script type='text/javascript'>
+    	    jQuery(document).ready(function(){
+    	       var message = jQuery("h1#greeting").text(); 
+    	       jQuery("#sendMessage").click(function(){
+    	           console.log('send message button clicked');
+    	       });
+    	    });
+    	</script>
     
     </main>
 </apex:page>

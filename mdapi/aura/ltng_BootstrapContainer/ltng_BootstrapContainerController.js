@@ -1,6 +1,8 @@
 ({
 	init : function(component, event, helper) {
 		//-- do nothing for now.
+		var newSize = component.get('v.containerSize');
+        helper.setContainerSize(component, helper, newSize);
 	},
     
     /**
@@ -26,10 +28,14 @@
             var value = payload.value;
             var toastEvent = $A.get("e.force:showToast");
             toastEvent.setParams({
-                "title": "Hi Back",
-                "message": value + " says: 'Hi Back'"
+                "title": "Container Says",
+                "message": value
             });
             toastEvent.fire();
+        } else if (payload.name === "ResizeContainer"){
+            console.log('resizeContainer');
+            var newSize = payload.value;
+            helper.setContainerSize(component, helper, newSize);
         } else {
             console.error('unknown message sent from bootstrap');
         }
