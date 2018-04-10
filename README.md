@@ -5,7 +5,6 @@ This is a quick example of how to run Bootstrap within Lightning Experience.
 
 **Please note: sample code (metadata api and dx formats) are available in the [mdapi](./mdapi) and [dx](./dx) folders above**
 
-... why you should not always do this.
 
 # Demo
 
@@ -48,6 +47,24 @@ as this already has it contained within a security frame.
 
 .
 
+
+# Note
+
+To note though, there are [limits in using the lightning:container](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/container_limits.htm) to be aware of though.
+
+As a general guideline, I think the Lightning Component Framework should always be the first option to consider because it's tightly integrated with the platform. Here are some examples:
+
+* Streamlined intercomponent communication (events)
+* Native data access services (Lightning Data Service or controller class). No impact on API limits.
+* Data caching performance benefits (built into Lightning Data Service)
+* Better UI integration / No iframe (compared to 3rd party frameworks loaded using Lightning Container Component)
+
+That said, you can also use other frameworks if you so desire or if you have existing code you want to integrate in Lightning. There are two ways you can do it:
+
+* Load the third party component directly in the Lightning Component DOM. In that case, the Lightning component is just a container for your component written using a 3rd party framework. This solution requires your framework to be compliant with the Locker Service.
+* Use the Lightning Container Component iframe based solution (discussed here)
+
+[See this blog post for more details](https://developer.salesforce.com/blogs/developer-relations/2017/02/lockerservice-lightning-container-third-party-libraries-lightning-components.html)
 
 
 # TLDR How
