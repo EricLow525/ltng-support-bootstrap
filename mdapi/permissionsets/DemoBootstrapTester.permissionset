@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>ltng_LightningBootstrapDemo</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <description>User that has this can see the bootstrap in lightning demo.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Demo Bootstrap Tester</label>
+    <tabSettings>
+        <tab>Bootstrap_Layout_Demo</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>ltng_BootstrapFullPageDemo</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

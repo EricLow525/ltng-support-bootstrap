@@ -1,55 +1,6 @@
-# INTERNAL NOTES
-
-Wait, what is this?
-
-This is meant to be a simple starting point for creating Lightning demo projects
-
-
-
-# Structure of the project
-
-* doc - documentation resources
-  * images - images for documentation
-* data - data used in demo
-  * queries - queries used in extracting data for demos
-  * trees - data trees used for demos
-* dx - salesforce dx project
-* mdapi - mdapi version of dx project
-
-# How do I use this?
-
-**1.** Fork the repository at [https://github.com/SalesforceCloudServices/ltng-support-demo-template](https://github.com/SalesforceCloudServices/ltng-support-demo-template) for your demo
-
-**2.** Clone the project locally
-
-**3.** Create your Salesforce DX project in the **DX** folder.
-
-
-# Quick Help:
-
-**How do I create a dx project?** <br />
-[sfdx force:project:create](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference_force_project.htm#cli_reference_force_project)
-
-**How do I run a script after installation?** <br />
-[Create an Apex Class that implements InstallHandler](https://developer.salesforce.com/docs/atlas.en-us.packagingGuide.meta/packagingGuide/apex_post_install_script_create.htm)
-
-
-
-
-# DELETE EVERYTHING ABOVE WHEN READY
-
------
------
-------
-------
-------
-------
-------
-
-
 # Overview
 
-Overview_of_what_the_project_represents
+This is a quick example of how to run Bootstrap within Lightning Experience.
 
 **Please note: sample code (metadata api and dx formats) are available in the [mdapi](./mdapi) and [dx](./dx) folders above**
 
