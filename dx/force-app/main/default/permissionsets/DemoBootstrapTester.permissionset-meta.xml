@@ -8,6 +8,10 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>Demo Bootstrap Tester</label>
     <tabSettings>
+        <tab>Bootstrap_Container_SPA</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
         <tab>Bootstrap_Layout_Demo</tab>
         <visibility>Visible</visibility>
     </tabSettings>
