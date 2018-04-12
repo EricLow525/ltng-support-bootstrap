@@ -169,15 +169,11 @@ However, the Salesforce CLI can be used with any org and does not require Salesf
 
 **1.** Run the following command:
 
-	sfdx force:mdapi:deploy -d mdapi -u [[orgAlias]] -w
+	sfdx force:org:deploy -u [[orgAlias]]
 
 **2.** Add the permission set to your user
 
-	sfdx force:user:permset:assign -n Ticket_Manager -u [[orgAlias]]
-	
-**3.** Upload the data
-
-	sfdx force:data:tree:import -f data/tree/Ticket__c.json -u [[orgAlias]]
+	sfdx force:user:permset:assign -n DemoBootstrapTester -u [[orgAlias]]
 	
 ...
 
@@ -185,5 +181,5 @@ Thats it, you can now open the org, and find the 'ticket' object in the 'all tab
 
 	sfdx force:org:open -u [[orgAlias]]
 
-
+You will now have the Bootstrap Demo app available in lightning
 	
