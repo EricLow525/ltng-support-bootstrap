@@ -161,6 +161,17 @@ The metadata for this example can be found under the [mdapi](./mdapi) folder.
 
 The Salesforce CLI version of this code can be found under the [dx](./dx) folder.
 
+## Installing via URL
+
+**1.** Click the link below to install
+
+(note this is only released for sandboxes currently)
+
+[https://test.salesforce.com/packaging/installPackage.apexp?p0=04t6A000002stx3QAA](https://test.salesforce.com/packaging/installPackage.apexp?p0=04t6A000002stx3QAA)
+
+**or simply navigate to** `https://YOUR_SALESFORCE_INSTANCE/packaging/installPackage.apexp?p0=04t6A000002stx3QAA` <br />
+if you are already logged in)
+
 ## Installing via the Salesforce CLI
 
 This assumes you have already installed the [Salesforce CLI]() and [Connected the Salesforce CLI to your org](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_auth_web_flow.htm).
@@ -182,4 +193,3 @@ Thats it, you can now open the org, and find the 'ticket' object in the 'all tab
 	sfdx force:org:open -u [[orgAlias]]
 
 You will now have the Bootstrap Demo app available in lightning
-	

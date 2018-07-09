@@ -13,7 +13,7 @@
   </types>
   <types>
     <name>ContentAsset</name>
-    <members>lightningLogo3</members>
+    <members>bootStrapDemoApp</members>
   </types>
   <types>
     <name>FlexiPage</name>
@@ -28,14 +28,6 @@
   <types>
     <name>PermissionSet</name>
     <members>DemoBootstrapTester</members>
-  </types>
-  <types>
-    <name>Profile</name>
-    <members>Admin</members>
-  </types>
-  <types>
-    <name>Settings</name>
-    <members>Security</members>
   </types>
   <types>
     <name>StaticResource</name>
